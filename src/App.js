@@ -11,9 +11,7 @@ export function App() {
     return dispatch(increment());
   };
   const decrementHandle = () => {
-    if (count > 0) {
-      dispatch(decrement());
-    }
+    dispatch(decrement());
   };
 
   return (
@@ -25,7 +23,10 @@ export function App() {
         Increment
       </button>
       <span>{count}</span>
-      <button aria-label="Decrement value" onClick={decrementHandle}>
+      <button
+        className={count <= 0 ? 'button__disabled' : ''}
+        onClick={decrementHandle}
+      >
         Decrement
       </button>
     </div>
