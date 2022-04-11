@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: #d3dedc;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  button {
+    background-color: #198754;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  span {
+    width: 25px;
+    color: #ef2f88;
+    font-size: 30px;
+    margin: 0px 20px;
+  }
+  .button__disabled {
+    pointer-events: none;
+    color: #ffbde6;
+    background-color: #fd5d5d;
+  }
+}
